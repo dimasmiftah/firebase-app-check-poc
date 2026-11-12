@@ -1,0 +1,524 @@
+{
+  "generatedAt": "2026-11-12T11:28:32.067Z",
+  "runs": 3,
+  "rows": [
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "No token on /api/regular",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "No token on /api/sensitive",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "Garbage token",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "Empty token header",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "JWT with alg none",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "JWT signed with attacker RSA key",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with fake Turnstile token",
+      "expected": "401 or 403",
+      "status": 403,
+      "detail": "turnstile_failed",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with empty body object",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with invalid JSON",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with numeric turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with array turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with null turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with 3000 character token",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange body carrying an app ID field (fake Turnstile token)",
+      "expected": "not testable without a real Turnstile token",
+      "status": 403,
+      "detail": "turnstile_failed: rejected at Turnstile verification before the body is used, so this does not prove the appId field is ignored",
+      "observation": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "GET on the exchange endpoint",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "POST on /api/regular",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "GET on /api/sensitive",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "16 KB token header",
+      "expected": "400 or 401 or 431",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "CORS",
+      "name": "Preflight from an untrusted origin",
+      "expected": "Allow-Origin is not the untrusted origin or *",
+      "status": 204,
+      "detail": "access-control-allow-origin: (absent)",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "CORS",
+      "name": "Preflight from the configured origin (positive control)",
+      "expected": "Allow-Origin echoes the configured origin",
+      "status": 204,
+      "detail": "access-control-allow-origin: http://localhost:3000",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Untouched real token (positive control)",
+      "expected": "200",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Signature last character flipped",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Payload sub changed, original signature kept",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Header alg swapped to HS256",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Token truncated",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Extra segment appended",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Bearer prefix added",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token in the Authorization header",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token with a lowercase header name",
+      "expected": "200",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "One token replayed 10 times from scripted clients",
+      "expected": "200 each time (a general token is a bearer token for its whole TTL)",
+      "status": "10 of 10 accepted",
+      "detail": "Different User-Agent and X-Forwarded-For per request; nothing binds the token to the client that earned it",
+      "observation": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "General token sent to /api/sensitive twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "A general token is accepted once by the replay protected endpoint",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "Consumed general token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "One limited-use token sent 10 times in parallel",
+      "expected": "exactly one 200, the rest 409",
+      "status": "1 x 200, 9 x 409",
+      "detail": "409,409,409,409,409,409,409,409,409,200",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Limited-use token sent sequentially twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "token_already_consumed",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Consumed limited-use token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Ten different limited-use tokens in parallel",
+      "expected": "ten 200 (distinct tokens do not interfere)",
+      "status": "10 x 200",
+      "detail": "200,200,200,200,200,200,200,200,200,200",
+      "ok": true,
+      "provider": "recaptcha"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Untouched real token (positive control)",
+      "expected": "200",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Signature last character flipped",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Payload sub changed, original signature kept",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Header alg swapped to HS256",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Token truncated",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Extra segment appended",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Bearer prefix added",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token in the Authorization header",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token with a lowercase header name",
+      "expected": "200",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "One token replayed 10 times from scripted clients",
+      "expected": "200 each time (a general token is a bearer token for its whole TTL)",
+      "status": "10 of 10 accepted",
+      "detail": "Different User-Agent and X-Forwarded-For per request; nothing binds the token to the client that earned it",
+      "observation": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "General token sent to /api/sensitive twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "A general token is accepted once by the replay protected endpoint",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "Consumed general token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "One limited-use token sent 10 times in parallel",
+      "expected": "exactly one 200, the rest 409",
+      "status": "1 x 200, 9 x 409",
+      "detail": "200,409,409,409,409,409,409,409,409,409",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Limited-use token sent sequentially twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "token_already_consumed",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Consumed limited-use token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Ten different limited-use tokens in parallel",
+      "expected": "ten 200 (distinct tokens do not interfere)",
+      "status": "10 x 200",
+      "detail": "200,200,200,200,200,200,200,200,200,200",
+      "ok": true,
+      "provider": "cloudflare"
+    },
+    {
+      "kind": "api",
+      "group": "Exchange rate limiting",
+      "name": "Flood the exchange endpoint with 80 fake tokens",
+      "expected": "429 after the per-minute limit",
+      "status": 429,
+      "detail": "28 of 80 requests rate limited",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Exchange rate limiting",
+      "name": "Request after the rate limit window passed",
+      "expected": "403 (limit lifted, fake token rejected by Turnstile)",
+      "status": 403,
+      "detail": "turnstile_failed",
+      "ok": true
+    }
+  ]
+}

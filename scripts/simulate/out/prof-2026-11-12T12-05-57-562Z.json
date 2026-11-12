@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-11-12T12:05:57.562Z",
+  "runs": 3,
+  "rows": [
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T12:05:27.538Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 789.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T12:05:31.777Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 619.2000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T12:05:34.826Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 703.6000000089407,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T12:05:37.991Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": true,
+          "durationMs": 3917.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T12:05:46.253Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": true,
+          "durationMs": 2010.1000000089407,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "real-chrome-cdp",
+      "description": "Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T12:05:52.432Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": true,
+          "durationMs": 2052.800000011921,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    }
+  ]
+}

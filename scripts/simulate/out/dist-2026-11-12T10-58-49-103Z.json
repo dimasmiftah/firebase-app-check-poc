@@ -1,0 +1,1806 @@
+{
+  "generatedAt": "2026-11-12T10:58:49.103Z",
+  "runs": 20,
+  "rows": [
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:42.775Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 718.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:46.676Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 682.0999999940395,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:49.837Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 588.2999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 4,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:52.759Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 654.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 5,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:55.881Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 669.7000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 6,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:56:58.949Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 677.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 7,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:01.957Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 616,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 8,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:04.992Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 653,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 9,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:08.046Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 572.2999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 10,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:11.057Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 1133.2999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 11,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:14.849Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 696.5999999940395,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 12,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:17.949Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 611.9000000059605,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 13,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:20.813Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 662.9000000059605,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 14,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:23.916Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 577.4000000059605,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 15,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:27.154Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 630.3000000119209,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 16,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:30.077Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 635.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 17,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:32.949Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 822.6000000089407,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 18,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:35.993Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 635.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 19,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:38.839Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 794.2000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "recaptcha",
+      "run": 20,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:42.341Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 726.7000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:47.048Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 655.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:50.307Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 596.3999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:53.276Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 671.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 4,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:56.346Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 693,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 5,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:57:59.388Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 658.8999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 6,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:02.440Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 713,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 7,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:06.590Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 735,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 8,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:09.543Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 647.2999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 9,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:12.368Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 642.8999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 10,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:15.271Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 680.2999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 11,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:18.450Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 640.0999999940395,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 12,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:21.255Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 689.5999999940395,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 13,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:24.211Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 779.5,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 14,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:27.133Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 824.8999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 15,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:30.495Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 695.3999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 16,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:33.497Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 633.4000000059605,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 17,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:36.514Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 977.8999999910593,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 18,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:40.158Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 655.5999999940395,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 19,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:43.173Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 706.7999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 20,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:58:46.188Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 699.7000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    }
+  ]
+}

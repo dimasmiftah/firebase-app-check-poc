@@ -1,0 +1,1166 @@
+{
+  "generatedAt": "2026-11-12T11:08:44.808Z",
+  "runs": 20,
+  "rows": [
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:06:57.839Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:00.717Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:03.101Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 4,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:05.761Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 5,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:08.129Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 6,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:10.678Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 7,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:12.852Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 8,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:15.045Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 9,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:17.247Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 10,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:19.984Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 11,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:22.225Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 12,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:24.880Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 13,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:27.450Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 14,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:29.839Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 15,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:32.541Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 16,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:34.786Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 17,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:37.238Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 18,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:39.681Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 19,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:46.899Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-plain",
+      "description": "Chrome headless, default automation flags",
+      "provider": "cloudflare",
+      "run": 20,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:49.242Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:53.465Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:56.812Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:07:59.240Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 4,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:01.950Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 5,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:04.172Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 6,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:06.547Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 7,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:09.178Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 8,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:11.820Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 9,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:14.241Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 10,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:16.777Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 11,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:19.198Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 12,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:21.785Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 13,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:24.394Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 14,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:26.900Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 15,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:29.955Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 16,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:32.377Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 17,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:35.052Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 18,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:37.305Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 19,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:39.966Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 20,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T11:08:42.793Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    }
+  ]
+}

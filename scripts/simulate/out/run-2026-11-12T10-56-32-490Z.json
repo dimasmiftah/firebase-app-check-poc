@@ -1,0 +1,996 @@
+{
+  "generatedAt": "2026-11-12T10:56:32.490Z",
+  "runs": 3,
+  "rows": [
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:19.294Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 761.4000000059605,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:22.458Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 638.6999999880791,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:25.446Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 757.7999999970198,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:28.580Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:31.384Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headless-spoofed",
+      "description": "Headless with normal UA, navigator.webdriver hidden, fake plugins and languages",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:33.743Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:38.275Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 1847.800000011921,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:43.366Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 791.6000000089407,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:54:47.927Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 725.2000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:50.901Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:53.563Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-automated",
+      "description": "Visible Chrome window driven by Playwright with default automation flags",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:54:56.335Z",
+        "signals": {
+          "webdriver": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "recaptcha",
+      "run": 1,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:55:03.469Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 625,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "recaptcha",
+      "run": 2,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:55:06.515Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 695.1999999880791,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "recaptcha",
+      "run": 3,
+      "result": {
+        "provider": "recaptcha",
+        "startedAt": "2026-11-12T10:55:09.626Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": {
+          "ok": true,
+          "score": 0.9,
+          "reasons": [],
+          "valid": true,
+          "invalidReason": "INVALID_REASON_UNSPECIFIED",
+          "error": null
+        },
+        "attestation": {
+          "ok": true,
+          "durationMs": 708.2000000029802,
+          "error": null
+        },
+        "regular": {
+          "status": 200,
+          "detail": "Valid reusable token"
+        },
+        "sensitive": {
+          "status": 200,
+          "detail": "Token consumed, replay protected"
+        },
+        "replay": {
+          "status": 409,
+          "detail": "token_already_consumed"
+        }
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "cloudflare",
+      "run": 1,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:55:12.651Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "cloudflare",
+      "run": 2,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:55:14.961Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "browser",
+      "profile": "headed-clean",
+      "description": "Visible Chrome, automation flag removed, webdriver hidden",
+      "provider": "cloudflare",
+      "run": 3,
+      "result": {
+        "provider": "cloudflare",
+        "startedAt": "2026-11-12T10:55:17.350Z",
+        "signals": {
+          "webdriver": false,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "plugins": 5,
+          "languages": [
+            "en-US",
+            "en"
+          ]
+        },
+        "score": null,
+        "attestation": {
+          "ok": false,
+          "durationMs": 0,
+          "error": "[regular token] Turnstile error 600010"
+        },
+        "regular": null,
+        "sensitive": null,
+        "replay": null
+      }
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "No token on /api/regular",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "No token on /api/sensitive",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "Garbage token",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "Empty token header",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "JWT with alg none",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Missing and forged tokens",
+      "name": "JWT signed with attacker RSA key",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with fake Turnstile token",
+      "expected": "401 or 403",
+      "status": 403,
+      "detail": "turnstile_failed",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with empty body object",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with invalid JSON",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with numeric turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with array turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with null turnstileToken",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange with 3000 character token",
+      "expected": "400",
+      "status": 400,
+      "detail": "invalid_request",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "Exchange body carrying an app ID field",
+      "expected": "401 or 403",
+      "status": 403,
+      "detail": "turnstile_failed",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "GET on the exchange endpoint",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "POST on /api/regular",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "GET on /api/sensitive",
+      "expected": "404",
+      "status": 404,
+      "detail": "",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Input validation and routing",
+      "name": "16 KB token header",
+      "expected": "400 or 401 or 431",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "CORS",
+      "name": "Preflight from an untrusted origin",
+      "expected": "Allow-Origin is not the untrusted origin or *",
+      "status": 204,
+      "detail": "access-control-allow-origin: (absent)",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Signature last character flipped",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Payload sub changed, original signature kept",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Header alg swapped to HS256",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Token truncated",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Extra segment appended",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Bearer prefix added",
+      "expected": "401",
+      "status": 401,
+      "detail": "invalid_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token in the Authorization header",
+      "expected": "401",
+      "status": 401,
+      "detail": "missing_token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Tampered real tokens",
+      "name": "Valid token with a lowercase header name",
+      "expected": "200",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "One browser token replayed 10 times from scripted clients",
+      "expected": "200 each time (a general token is a bearer token for its whole TTL)",
+      "status": "10 of 10 accepted",
+      "detail": "Different User-Agent and X-Forwarded-For per request; nothing binds the token to the client that earned it",
+      "observation": true
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "General token sent to /api/sensitive twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "A general token is accepted once by the replay protected endpoint",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Token harvesting and general token reuse",
+      "name": "Consumed general token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "One limited-use token sent 10 times in parallel",
+      "expected": "exactly one 200, the rest 409",
+      "status": "1 x 200, 9 x 409",
+      "detail": "200,409,409,409,409,409,409,409,409,409",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Limited-use token sent sequentially twice",
+      "expected": "200 then 409",
+      "status": "200 then 409",
+      "detail": "token_already_consumed",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Consumed limited-use token sent to /api/regular",
+      "expected": "200 (the regular endpoint does not check consumption)",
+      "status": 200,
+      "detail": "Valid reusable token",
+      "observation": true
+    },
+    {
+      "kind": "api",
+      "group": "Limited-use tokens and replay",
+      "name": "Ten different limited-use tokens in parallel",
+      "expected": "ten 200 (distinct tokens do not interfere)",
+      "status": "10 x 200",
+      "detail": "200,200,200,200,200,200,200,200,200,200",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Exchange rate limiting",
+      "name": "Flood the exchange endpoint with 80 fake tokens",
+      "expected": "429 after the per-minute limit",
+      "status": 429,
+      "detail": "28 of 80 requests rate limited",
+      "ok": true
+    },
+    {
+      "kind": "api",
+      "group": "Exchange rate limiting",
+      "name": "Request after the rate limit window passed",
+      "expected": "403 (limit lifted, fake token rejected by Turnstile)",
+      "status": 403,
+      "detail": "turnstile_failed",
+      "ok": true
+    }
+  ]
+}

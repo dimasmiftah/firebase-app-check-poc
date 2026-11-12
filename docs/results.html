@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>App Check bot simulation results</title>
+<style>
+  body { font: 15px/1.5 -apple-system, system-ui, sans-serif; max-width: 1100px; margin: 32px auto; padding: 0 16px; color: #1c1c1e; }
+  h1 { margin-bottom: 4px; } h2 { margin-top: 36px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th, td { border: 1px solid #d8d8dc; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f4f4f6; }
+  td:first-child { min-width: 170px; } sup { color: #8a1c1c; margin-left: 2px; } .notes { margin: 6px 0 0; padding-left: 20px; color: #555; }
+  .muted { color: #6b6b70; font-size: 13px; } .small { font-size: 12px; color: #444; }
+  .pill { padding: 2px 8px; border-radius: 10px; font-size: 12px; white-space: nowrap; }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; margin-left: 4px; } .tag.win { color: #14612b; } .tag.lose { color: #8a1c1c; }
+  .neutral { background: #ececf0; color: #555; } tr.summary td { background: #fafafc; }
+  .pass { background: #d7f3de; color: #14612b; } .block { background: #fbdcdc; color: #8a1c1c; } .mixed { background: #fdf0c8; color: #7a5b00; }
+  .note { background: #fff7e0; border: 1px solid #f0d98a; padding: 10px 14px; border-radius: 6px; margin: 12px 0; }
+  code { background: #f1f1f3; padding: 1px 5px; border-radius: 4px; }
+</style></head><body>
+<h1>App Check bot simulation results</h1>
+<p class="muted">Generated browser profiles 2026-11-12T10:56:32.490Z and 2026-11-12T12:05:57.562Z and 2026-11-12T12:16:20.879Z, API cases 2026-11-12T11:28:32.067Z. 3 runs per profile and provider against the local PoC (API :3001, web :3000), using the installed Google Chrome driven by Playwright.</p>
+
+<h2>What was tested</h2>
+<p>Each browser profile opens <code>/probe/&lt;provider&gt;</code>, which requests an App Check token, calls <code>/api/regular</code>, then sends a limited-use token to <code>/api/sensitive</code> and replays the same token. For reCAPTCHA the page also runs a separate <code>CreateAssessment</code> through <code>/api/diag/recaptcha-score</code> to read the raw risk score.</p>
+<ul>
+  <li><strong>headless-plain</strong>: default headless Chrome with automation flags.</li>
+  <li><strong>headless-spoofed</strong>: headless, normal user agent, <code>navigator.webdriver</code> hidden, fake plugins and languages.</li>
+  <li><strong>headed-automated</strong>: visible Chrome driven by Playwright, default flags.</li>
+  <li><strong>headed-clean</strong>: visible Chrome, automation flag removed, webdriver hidden.</li>
+  <li><strong>real-chrome-cdp</strong>: a real Chrome started normally with its own persistent profile (no Playwright launch, no spoofing) and driven over the Chrome DevTools Protocol. Site data for localhost is cleared between runs.<br><span class="muted">CDP (Chrome DevTools Protocol) is the debugging interface Chrome exposes on a local port. DevTools, Playwright and Puppeteer all use it to inspect and drive a browser. Normally Playwright starts Chrome itself with extra automation flags. Here Chrome is started like a normal user would, and Playwright only attaches to it afterwards, so the browser looks like an ordinary Chrome that a script happens to be controlling.</span></li>
+</ul>
+
+
+<h2>Side by side: reCAPTCHA Enterprise vs Cloudflare Turnstile</h2>
+  <p class="muted">How a winner is decided: for automated profiles the better provider is the one that refused more runs (stopped the bot). For human profiles it is the one that let the real person through. A row is inconclusive when a failure came from the network rather than the provider. For latency, lower is better. These are results of this PoC on one machine, not a general ranking.</p>
+  <table>
+    <thead><tr><th>Profile</th><th>reCAPTCHA Enterprise (native provider)</th><th>Turnstile (custom provider)</th><th>Result</th></tr></thead>
+    <tbody><tr><td><strong>headless-plain</strong><br><span class="muted">Chrome headless, default automation flags</span></td><td><span class="pill pass">3/3 token</span> <span class="tag lose">lose</span><br><span class="small">score 0.9, 0.9, 0.9</span></td><td><span class="pill block">0/3 token</span> <span class="tag win">win</span><br><span class="small">Turnstile error 600010</span></td><td><span class="pill pass">Turnstile wins</span></td></tr>
+<tr><td><strong>headless-spoofed</strong><br><span class="muted">Headless with normal UA, navigator.webdriver hidden, fake plugins and languages</span></td><td><span class="pill pass">3/3 token</span> <span class="tag lose">lose</span><br><span class="small">score 0.9, 0.9, 0.9</span></td><td><span class="pill block">0/3 token</span> <span class="tag win">win</span><br><span class="small">Turnstile error 600010</span></td><td><span class="pill pass">Turnstile wins</span></td></tr>
+<tr><td><strong>headed-automated</strong><br><span class="muted">Visible Chrome window driven by Playwright with default automation flags</span></td><td><span class="pill pass">3/3 token</span> <span class="tag lose">lose</span><br><span class="small">score 0.9, 0.9, 0.9</span></td><td><span class="pill block">0/3 token</span> <span class="tag win">win</span><br><span class="small">Turnstile error 600010</span></td><td><span class="pill pass">Turnstile wins</span></td></tr>
+<tr><td><strong>headed-clean</strong><br><span class="muted">Visible Chrome, automation flag removed, webdriver hidden</span></td><td><span class="pill pass">3/3 token</span> <span class="tag lose">lose</span><br><span class="small">score 0.9, 0.9, 0.9</span></td><td><span class="pill block">0/3 token</span> <span class="tag win">win</span><br><span class="small">Turnstile error 600010</span></td><td><span class="pill pass">Turnstile wins</span></td></tr>
+<tr><td><strong>real-chrome-cdp</strong><br><span class="muted">Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs</span></td><td><span class="pill pass">3/3 token</span><br><span class="small">score 0.9, 0.9, 0.9</span></td><td><span class="pill pass">3/3 token</span><br><span class="small">token issued</span></td><td><span class="pill mixed">Tie</span></td></tr>
+<tr><td><strong>human-chrome</strong><br><span class="muted">Normal Chrome, real user, cleared site data (manual run)</span></td><td><span class="pill pass">1/1 token</span><br><span class="small">score 0.9</span></td><td><span class="pill pass">1/1 token</span><br><span class="small">token issued</span></td><td><span class="pill mixed">Tie</span></td></tr>
+<tr><td><strong>human-incognito</strong><br><span class="muted">Chrome incognito window, no VPN (manual run)</span></td><td><span class="pill pass">1/1 token</span><br><span class="small">score 0.7</span></td><td><span class="pill pass">1/1 token</span><br><span class="small">token issued</span></td><td><span class="pill mixed">Tie</span></td></tr>
+<tr><td><strong>human-vpn</strong><br><span class="muted">Normal Chrome with VPN on (manual run)</span></td><td><span class="pill pass">1/1 token</span><br><span class="small">score 0.9</span><sup>1</sup></td><td><span class="pill block">0/1 token</span><br><span class="small">siteverify_unavailable: The operation timed out.</span><sup>2</sup></td><td><span class="pill neutral">Inconclusive</span></td></tr>
+    <tr class="summary"><td><strong>Automated runs refused</strong></td><td>0/15 <span class="tag lose">lose</span></td><td>12/15 <span class="tag win">win</span></td><td><span class="pill pass">Turnstile wins</span></td></tr>
+    <tr class="summary"><td><strong>Human runs let through</strong></td><td>3/3</td><td>2/2 (1 inconclusive excluded)</td><td><span class="pill mixed">Tie</span></td></tr>
+    
+    <tr class="summary"><td><strong>Attestation latency (cached tokens under 5 ms excluded)</strong></td><td><span class="small">752 ms avg over 17 fresh attestations</span> <span class="tag win">win</span></td><td><span class="small">2398 ms avg over 5 fresh attestations</span> <span class="tag lose">lose</span></td><td><span class="pill pass">reCAPTCHA wins</span><br><span class="small muted">low confidence, fewer than 30 samples on one side</span></td></tr>
+    <tr class="summary"><td><strong>Profile rows won</strong></td><td>0</td><td>4</td><td class="small">3 ties, 1 inconclusive. Unweighted count of rows above.</td></tr>
+    </tbody>
+  </table>
+  <ol class="small notes"><li>Attestation took 0.1 ms, so App Check returned a token cached from the earlier session instead of doing a fresh exchange. The 0.9 score comes from a separate fresh assessment.</li><li>Regular call used a token cached from the earlier non-VPN session. The fresh limited-use exchange reached the API with a Turnstile token (so the widget did issue one with the VPN on) but the API timed out calling Cloudflare Siteverify. This is most likely the API host's network while the VPN was on, not a Turnstile decision about the human; that is an inference.</li></ol>
+<h2>Automated browser profiles</h2>
+  <table>
+    <thead><tr><th>Profile</th><th>Provider</th><th>Attestation</th><th>reCAPTCHA score</th><th>Backend calls</th><th>Errors</th></tr></thead>
+    <tbody><tr><td rowspan="2"><strong>headless-plain</strong><br><span class="muted">Chrome headless, default automation flags</span></td>
+        <td>recaptcha</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td>0.9, 0.9, 0.9</td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>cloudflare</td>
+        <td><span class="pill block">0/3 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small"><span class="muted">none</span></td>
+        <td class="small">[regular token] Turnstile error 600010</td>
+      </tr>
+<tr><td rowspan="2"><strong>headless-spoofed</strong><br><span class="muted">Headless with normal UA, navigator.webdriver hidden, fake plugins and languages</span></td>
+        <td>recaptcha</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td>0.9, 0.9, 0.9</td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>cloudflare</td>
+        <td><span class="pill block">0/3 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small"><span class="muted">none</span></td>
+        <td class="small">[regular token] Turnstile error 600010</td>
+      </tr>
+<tr><td rowspan="2"><strong>headed-automated</strong><br><span class="muted">Visible Chrome window driven by Playwright with default automation flags</span></td>
+        <td>recaptcha</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td>0.9, 0.9, 0.9</td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>cloudflare</td>
+        <td><span class="pill block">0/3 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small"><span class="muted">none</span></td>
+        <td class="small">[regular token] Turnstile error 600010</td>
+      </tr>
+<tr><td rowspan="2"><strong>headed-clean</strong><br><span class="muted">Visible Chrome, automation flag removed, webdriver hidden</span></td>
+        <td>recaptcha</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td>0.9, 0.9, 0.9</td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>cloudflare</td>
+        <td><span class="pill block">0/3 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small"><span class="muted">none</span></td>
+        <td class="small">[regular token] Turnstile error 600010</td>
+      </tr>
+<tr><td rowspan="2"><strong>real-chrome-cdp</strong><br><span class="muted">Real Chrome started normally with its own persistent profile and driven over CDP, no spoofing and no automation flags, localhost site data cleared between runs</span></td>
+        <td>recaptcha</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td>0.9, 0.9, 0.9</td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>cloudflare</td>
+        <td><span class="pill pass">3/3 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small">sensitive 3/3<br>replay blocked 3/3</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr></tbody>
+  </table>
+  
+<h2>Real human sessions</h2>
+  <table>
+    <thead><tr><th>Profile</th><th>Provider</th><th>Attestation</th><th>reCAPTCHA score</th><th>Backend calls</th><th>Errors</th></tr></thead>
+    <tbody><tr><td rowspan="2"><strong>human-chrome</strong><br><span class="muted">Normal Chrome, real user, cleared site data (manual run)</span></td>
+        <td>cloudflare</td>
+        <td><span class="pill pass">1/1 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small">sensitive 1/1<br>replay blocked 1/1</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>recaptcha</td>
+        <td><span class="pill pass">1/1 token</span></td>
+        <td>0.9</td>
+        <td class="small">sensitive 1/1<br>replay blocked 1/1</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr><td rowspan="2"><strong>human-incognito</strong><br><span class="muted">Chrome incognito window, no VPN (manual run)</span></td>
+        <td>cloudflare</td>
+        <td><span class="pill pass">1/1 token</span></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small">sensitive 1/1<br>replay blocked 1/1</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr>
+        <td>recaptcha</td>
+        <td><span class="pill pass">1/1 token</span></td>
+        <td>0.7</td>
+        <td class="small">sensitive 1/1<br>replay blocked 1/1</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr>
+<tr><td rowspan="2"><strong>human-vpn</strong><br><span class="muted">Normal Chrome with VPN on (manual run)</span></td>
+        <td>cloudflare</td>
+        <td><span class="pill block">0/1 token</span><sup>1</sup></td>
+        <td><span class="muted">no score</span></td>
+        <td class="small"><span class="muted">none</span></td>
+        <td class="small">siteverify_unavailable: The operation timed out.</td>
+      </tr>
+<tr>
+        <td>recaptcha</td>
+        <td><span class="pill pass">1/1 token</span><sup>2</sup></td>
+        <td>0.9</td>
+        <td class="small">sensitive 1/1<br>replay blocked 1/1</td>
+        <td class="small"><span class="muted">none</span></td>
+      </tr></tbody>
+  </table>
+  <ol class="small notes"><li>Regular call used a token cached from the earlier non-VPN session. The fresh limited-use exchange reached the API with a Turnstile token (so the widget did issue one with the VPN on) but the API timed out calling Cloudflare Siteverify. This is most likely the API host's network while the VPN was on, not a Turnstile decision about the human; that is an inference.</li><li>Attestation took 0.1 ms, so App Check returned a token cached from the earlier session instead of doing a fresh exchange. The 0.9 score comes from a separate fresh assessment.</li></ol>
+<h2>Direct API cases (no browser)</h2>
+  <p>47 of 47 checks behaved as expected, plus 7 observations that document behavior rather than pass or fail. Green status means as expected, amber means observation, red means unexpected.</p>
+  <div class="note"><strong>Where the tokens come from.</strong> reCAPTCHA tokens are real: they were obtained by an automated browser through the Firebase SDK. Automated browsers cannot pass Turnstile, so the Turnstile (custom provider) tokens were minted directly with the Admin SDK <code>createToken()</code> for the Cloudflare app, which is the same call the exchange endpoint makes after Turnstile verification succeeds. The backend sees the same kind of token either way, so these cases test the verification path, not Turnstile itself.</div>
+  <p class="muted">The PoC API has no mode switch: both Firebase apps (reCAPTCHA and Turnstile) are approved at the same time, and the verification layer only looks at the token, not at which provider is enabled. A per-provider switch like the one planned for hermes is not exercised here.</p>
+  <h3 class="muted">Verification layer, same code path for any token (both providers enabled)</h3>
+  <h3>Missing and forged tokens <span class="muted">6 checks as expected</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody><tr><td>No token on /api/regular</td><td><span class="pill pass">401</span></td><td class="small">missing_token</td></tr>
+<tr><td>No token on /api/sensitive</td><td><span class="pill pass">401</span></td><td class="small">missing_token</td></tr>
+<tr><td>Garbage token</td><td><span class="pill pass">401</span></td><td class="small">invalid_token</td></tr>
+<tr><td>Empty token header</td><td><span class="pill pass">401</span></td><td class="small">missing_token</td></tr>
+<tr><td>JWT with alg none</td><td><span class="pill pass">401</span></td><td class="small">invalid_token</td></tr>
+<tr><td>JWT signed with attacker RSA key</td><td><span class="pill pass">401</span></td><td class="small">invalid_token</td></tr></tbody>
+  </table>
+<h3>Input validation and routing <span class="muted">3 checks as expected</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody><tr><td>POST on /api/regular</td><td><span class="pill pass">404</span></td><td class="small"></td></tr>
+<tr><td>GET on /api/sensitive</td><td><span class="pill pass">404</span></td><td class="small"></td></tr>
+<tr><td>16 KB token header</td><td><span class="pill pass">401</span></td><td class="small">invalid_token</td></tr></tbody>
+  </table>
+<h3>CORS <span class="muted">2 checks as expected</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody><tr><td>Preflight from an untrusted origin</td><td><span class="pill pass">204</span><br><span class="muted">expected: Allow-Origin is not the untrusted origin or *</span></td><td class="small">access-control-allow-origin: (absent)</td></tr>
+<tr><td>Preflight from the configured origin (positive control)</td><td><span class="pill pass">204</span><br><span class="muted">expected: Allow-Origin echoes the configured origin</span></td><td class="small">access-control-allow-origin: http://localhost:3000</td></tr></tbody>
+  </table>
+  <h3 class="muted">Turnstile exchange endpoint only (reCAPTCHA has no equivalent endpoint)</h3>
+  <h3>Exchange input validation <span class="muted">8 checks as expected, 1 observations</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody><tr><td>Exchange with fake Turnstile token</td><td><span class="pill pass">403</span></td><td class="small">turnstile_failed</td></tr>
+<tr><td>Exchange with empty body object</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange with invalid JSON</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange with numeric turnstileToken</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange with array turnstileToken</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange with null turnstileToken</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange with 3000 character token</td><td><span class="pill pass">400</span></td><td class="small">invalid_request</td></tr>
+<tr><td>Exchange body carrying an app ID field (fake Turnstile token)</td><td><span class="pill mixed">403</span><br><span class="muted">expected: not testable without a real Turnstile token</span></td><td class="small">turnstile_failed: rejected at Turnstile verification before the body is used, so this does not prove the appId field is ignored</td></tr>
+<tr><td>GET on the exchange endpoint</td><td><span class="pill pass">404</span></td><td class="small"></td></tr></tbody>
+  </table>
+<h3>Exchange rate limiting <span class="muted">2 checks as expected</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody><tr><td>Flood the exchange endpoint with 80 fake tokens</td><td><span class="pill pass">429</span><br><span class="muted">expected: 429 after the per-minute limit</span></td><td class="small">28 of 80 requests rate limited</td></tr>
+<tr><td>Request after the rate limit window passed</td><td><span class="pill pass">403</span><br><span class="muted">expected: 403 (limit lifted, fake token rejected by Turnstile)</span></td><td class="small">turnstile_failed</td></tr></tbody>
+  </table>
+  <h3 class="muted">Cases that use a real token, per provider</h3>
+  <h3>Tampered real tokens <span class="muted">reCAPTCHA: 9 checks as expected; Turnstile: 9 checks as expected</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>reCAPTCHA Enterprise token</th><th>Turnstile (custom provider) token</th></tr></thead>
+    <tbody><tr><td>Untouched real token (positive control)</td><td><span class="pill pass">200</span><br><span class="small muted">Valid reusable token</span></td><td><span class="pill pass">200</span><br><span class="small muted">Valid reusable token</span></td></tr>
+<tr><td>Signature last character flipped</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Payload sub changed, original signature kept</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Header alg swapped to HS256</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Token truncated</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Extra segment appended</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Bearer prefix added</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Valid token in the Authorization header</td><td><span class="pill pass">401</span></td><td><span class="pill pass">401</span></td></tr>
+<tr><td>Valid token with a lowercase header name</td><td><span class="pill pass">200</span><br><span class="small muted">Valid reusable token</span></td><td><span class="pill pass">200</span><br><span class="small muted">Valid reusable token</span></td></tr></tbody>
+  </table>
+<h3>Token harvesting and general token reuse <span class="muted">reCAPTCHA: 1 checks as expected, 2 observations; Turnstile: 1 checks as expected, 2 observations</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>reCAPTCHA Enterprise token</th><th>Turnstile (custom provider) token</th></tr></thead>
+    <tbody><tr><td>One token replayed 10 times from scripted clients<br><span class="muted">expected: 200 each time (a general token is a bearer token for its whole TTL)</span></td><td><span class="pill mixed">10 of 10 accepted</span><br><span class="small muted">Different User-Agent and X-Forwarded-For per request; nothing binds the token to the client that earned it</span></td><td><span class="pill mixed">10 of 10 accepted</span><br><span class="small muted">Different User-Agent and X-Forwarded-For per request; nothing binds the token to the client that earned it</span></td></tr>
+<tr><td>General token sent to /api/sensitive twice<br><span class="muted">expected: 200 then 409</span></td><td><span class="pill pass">200 then 409</span><br><span class="small muted">A general token is accepted once by the replay protected endpoint</span></td><td><span class="pill pass">200 then 409</span><br><span class="small muted">A general token is accepted once by the replay protected endpoint</span></td></tr>
+<tr><td>Consumed general token sent to /api/regular<br><span class="muted">expected: 200 (the regular endpoint does not check consumption)</span></td><td><span class="pill mixed">200</span><br><span class="small muted">Valid reusable token</span></td><td><span class="pill mixed">200</span><br><span class="small muted">Valid reusable token</span></td></tr></tbody>
+  </table>
+<h3>Limited-use tokens and replay <span class="muted">reCAPTCHA: 3 checks as expected, 1 observations; Turnstile: 3 checks as expected, 1 observations</span></h3>
+  <table>
+    <thead><tr><th>Case</th><th>reCAPTCHA Enterprise token</th><th>Turnstile (custom provider) token</th></tr></thead>
+    <tbody><tr><td>One limited-use token sent 10 times in parallel<br><span class="muted">expected: exactly one 200, the rest 409</span></td><td><span class="pill pass">1 x 200, 9 x 409</span><br><span class="small muted">409,409,409,409,409,409,409,409,409,200</span></td><td><span class="pill pass">1 x 200, 9 x 409</span><br><span class="small muted">200,409,409,409,409,409,409,409,409,409</span></td></tr>
+<tr><td>Limited-use token sent sequentially twice<br><span class="muted">expected: 200 then 409</span></td><td><span class="pill pass">200 then 409</span></td><td><span class="pill pass">200 then 409</span></td></tr>
+<tr><td>Consumed limited-use token sent to /api/regular<br><span class="muted">expected: 200 (the regular endpoint does not check consumption)</span></td><td><span class="pill mixed">200</span><br><span class="small muted">Valid reusable token</span></td><td><span class="pill mixed">200</span><br><span class="small muted">Valid reusable token</span></td></tr>
+<tr><td>Ten different limited-use tokens in parallel<br><span class="muted">expected: ten 200 (distinct tokens do not interfere)</span></td><td><span class="pill pass">10 x 200</span><br><span class="small muted">200,200,200,200,200,200,200,200,200,200</span></td><td><span class="pill pass">10 x 200</span><br><span class="small muted">200,200,200,200,200,200,200,200,200,200</span></td></tr></tbody>
+  </table>
+<h2>Outcome distribution under volume</h2>
+  <p>Each automated profile ran once per fresh browser context, in sequence, after the main run, for both providers. reCAPTCHA outcomes are raw scores. Turnstile has no score, so its outcome is the error returned or a token.</p>
+  <table>
+    <thead><tr><th>Profile</th><th>Provider</th><th>Samples</th><th>Outcomes</th><th>Got a token</th></tr></thead>
+    <tbody><tr><td rowspan="2"><strong>headless-plain</strong></td><td>recaptcha</td><td>20</td><td class="small">score 0.9 x 20</td><td><span class="pill pass">20/20 token</span></td></tr>
+<tr><td>cloudflare</td><td>20</td><td class="small">Turnstile error 600010 x 20</td><td><span class="pill block">0/20 token</span></td></tr>
+<tr><td rowspan="2"><strong>headless-spoofed</strong></td><td>recaptcha</td><td>20</td><td class="small">score 0.9 x 20</td><td><span class="pill pass">20/20 token</span></td></tr>
+<tr><td>cloudflare</td><td>20</td><td class="small">Turnstile error 600010 x 20</td><td><span class="pill block">0/20 token</span></td></tr></tbody>
+  </table>
+<h2>Attacker throughput: tokens per minute</h2>
+  <p>How fast an automated profile obtained usable tokens, which is what matters in single-use mode where every request needs a fresh token. A completed probe includes several token requests and API calls, so these are conservative: a leaner client would be faster. Single machine, single IP, headless spoofed profile unless stated.</p>
+  <table>
+    <thead><tr><th>Profile</th><th>Provider</th><th>Setup</th><th>Probes with a token</th><th>Tokens per minute</th></tr></thead>
+    <tbody><tr><td>headless-plain</td><td>recaptcha</td><td>one browser, sequential</td><td>20/20</td><td>19.1</td></tr>
+<tr><td>headless-spoofed</td><td>recaptcha</td><td>one browser, sequential</td><td>20/20</td><td>19.3</td></tr>
+<tr><td>headless-plain</td><td>cloudflare</td><td>one browser, sequential</td><td>0/20</td><td>0.0</td></tr>
+<tr><td>headless-spoofed</td><td>cloudflare</td><td>one browser, sequential</td><td>0/20</td><td>0.0</td></tr>
+<tr><td>headless-spoofed</td><td>recaptcha</td><td>8 browsers in parallel, 2 rounds</td><td>16/16</td><td>20.8</td></tr>
+<tr><td>headless-spoofed</td><td>cloudflare</td><td>8 browsers in parallel, 2 rounds</td><td>0/16</td><td>0.0</td></tr></tbody>
+  </table>
+
+<h2>Reading the results</h2>
+<ul>
+  <li>The score column lists the raw reCAPTCHA Enterprise score of each run, from a separate <code>CreateAssessment</code> call. App Check performs its own assessment on its own token, so the score shown and the pass or fail of the token exchange are not guaranteed to match.</li>
+  <li>Turnstile error <code>600010</code> belongs to Cloudflare's <code>600*</code> family, documented as "Generic challenge failure" with the guidance "Bot behavior detected". The documentation does not say it is specific to automation. Here it appeared in every automated run and in none of the human runs on the same origin, which supports automation detection but does not prove which signal triggered it. No Firebase call is made when it happens.</li>
+  <li>The reCAPTCHA minimum score threshold in the Firebase Console is 0.5 (as configured by the project owner, not read from the Console). Every reCAPTCHA run in this report scored 0.7 or 0.9 and got a token. No run scored below the threshold, so this data does not test the threshold from below.</li>
+  <li>Human variants: incognito without VPN scored 0.7 (lower than the 0.9 of the normal profile but still passing). With the VPN on, the normal profile still scored 0.9, so the VPN alone did not lower the score in this single run, assuming the VPN changed the egress IP (not verified). The Turnstile widget itself did issue a token with the VPN on: the exchange endpoint was reached with a token and then timed out calling Cloudflare Siteverify, so this run does not show Turnstile rejecting the VPN. The timeout is most likely the API host's network while the VPN was on, which is an inference.</li>
+  <li><strong>On this machine reCAPTCHA did not separate automation from a human.</strong> All automated profiles scored 0.9 and received tokens, including 20 of 20 samples each of headless-plain and headless-spoofed. This is a single machine and IP, so it should not be generalized.</li>
+  <li><strong>Turnstile refused every Playwright-launched browser but not a real Chrome driven over CDP.</strong> Every run from a browser launched by Playwright got error 600010 (headless and headed, with or without spoofing, in the main run, the 20-sample runs and the parallel runs). The <code>real-chrome-cdp</code> profile, a normally started Chrome with its own profile and no spoofing at all, got a Turnstile token in 3 of 3 runs. So in this PoC Turnstile separates how the browser was launched and driven, not automation as such, and a scripted real browser passes. Which signal Cloudflare uses was not investigated.</li>
+  <li>reCAPTCHA also issued tokens to <code>real-chrome-cdp</code> (score 0.9, 3 of 3), the same as for the spoofed profiles.</li>
+  <li><strong>Design observation:</strong> the exchange endpoint calls Siteverify with only the secret and the response token. It does not send the optional <code>remoteip</code> field, so a Turnstile token is not tied to the visitor's IP on our side. Whether Siteverify enforces that field was not tested.</li>
+  <li>Forged, unsigned and tampered tokens are rejected at verification with 401, and the positive controls (an untouched real token, the configured CORS origin) pass, so the negative cases are not passing trivially.</li>
+  <li>Not covered because they need a real human, a different environment, or a config change: reuse of a real Turnstile token (<code>timeout-or-duplicate</code>), Turnstile hostname and action mismatch against a real widget, Cloudflare test keys, a genuinely expired token (needs a 30 minute wait), a threshold sweep in the Firebase Console, other browsers and mobile devices, running from datacenter, residential or mobile IPs, using a token from a different real network, device farms, CAPTCHA solving services, and the human baselines beyond one run each on one machine.</li>
+</ul>
+<h2>Market research: reCAPTCHA vs Turnstile</h2>
+  <div class="note"><strong>Read with care.</strong> Gathered on 2026-11-12 from web search. All adoption figures come from third-party trackers that count different things, and most opinion pieces are vendor blogs. No independent 2026 measurement of bypass resistance was found, and no Reddit or Hacker News threads were retrievable, so "who trusts which" is not backed by community data here.</div>
+
+  <h3>Adoption (directional only)</h3>
+  <table>
+    <thead><tr><th>Source</th><th>reCAPTCHA</th><th>Turnstile</th><th>What it counts</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.zyte.com/sowa/2026/barriers/captcha">Zyte 2026</a></td><td>49.4%</td><td>39.4%</td><td class="small">Share among CAPTCHA deployments</td></tr>
+      <tr><td><a href="https://www.wmtips.com/technologies/captchas/">WMTips</a></td><td>67.1%</td><td>15.4%</td><td class="small">Global ranking among CAPTCHA services (hCaptcha 31%)</td></tr>
+      <tr><td><a href="https://technologychecker.io/category/bot-detection-captcha">TechnologyChecker</a></td><td>57.8%</td><td>4.2%</td><td class="small">Detection on live sites</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>reCAPTCHA leads in every source. Turnstile is growing fastest: TechnologyChecker shows it gaining about 14,600 domains in 30 days while reCAPTCHA lost ground.</li>
+    <li>Country trackers such as <a href="https://www.aguko.com/cat/captchas/lt">Aguko (Lithuania)</a> show reCAPTCHA far ahead in individual markets.</li>
+  </ul>
+
+  <h3>What people say</h3>
+  <ul>
+    <li><strong>In favor of Turnstile:</strong> mostly invisible UX, privacy, free tier, light page weight. One developer reports about 40 ms blocking time versus about 200 ms for reCAPTCHA (<a href="https://ranti.dev/blog/migrating-from-recaptcha-to-turnstile">single anecdote</a>, not a benchmark). Migration is documented as swapping the script, site key and verification URL (<a href="https://developers.cloudflare.com/turnstile/migration/migrating-from-recaptcha">Cloudflare guide</a>).</li>
+    <li><strong>In favor of reCAPTCHA:</strong> more mature risk scoring (a 0 to 1 score with Console thresholds) and a longer track record.</li>
+    <li><strong>Concerns about Turnstile:</strong> VPN users being challenged or blocked, lock-in to the Cloudflare ecosystem, little public data on effectiveness against sophisticated bots. Cloudflare's docs list disabling a VPN as a troubleshooting step for its generic <code>600*</code> challenge errors, so VPN friction is plausible.</li>
+    <li><strong>Bypass resistance:</strong> the only comparison found is a 2022 study by a competitor (<a href="https://hcaptcha.uth.edu/blog/hcaptcha-vs-turnstile">hCaptcha</a>) saying paid bypass services were cheaper and faster against Turnstile than against reCAPTCHA v3. It is almost four years old and from a vendor with a competing product. Blogs say the bypass landscape changes week to week, without measurements (<a href="https://dev.to/vhub_systems_ed5641f65d59/cloudflare-turnstile-vs-hcaptcha-vs-recaptcha-v3-which-is-hardest-to-bypass-in-2026-5h17">example</a>).</li>
+  </ul>
+  <p>Popularity is not effectiveness. In this PoC, Turnstile refused every browser launched by Playwright while reCAPTCHA let all of them through with a score of 0.9, but a real Chrome driven over CDP got tokens from both, all on one machine and one IP. That does not contradict the adoption numbers, and neither result should be generalized.</p>
+
+  <h3>Turnstile widgets</h3>
+  <p>A widget is a configuration, not the visible box: it holds a mode (Managed, Non-Interactive or Invisible), a label, a site key and a secret key, plus allowed hostnames (<a href="https://developers.cloudflare.com/turnstile/concepts/widget/">Cloudflare docs</a>). The Free plan allows up to 20 widgets and 10 hostnames per widget. Listing a root domain also allows its subdomains (<a href="https://developers.cloudflare.com/turnstile/additional-configuration/hostname-management/">hostname management</a>). For Indodana the plan is 3 widgets, one each for staging, sandbox and production, so each environment has its own secret key and analytics, and the backend hostname check stays per environment. That is well inside the Free limits. Cloudflare gives no official guidance on one widget versus several, so one widget per environment is a recommendation, not a rule.</p>
+<h2>Estimated monthly cost</h2>
+  <div class="note"><strong>Assumptions.</strong> Single-use mode, so every protected request needs a fresh limited-use token. Production traffic is 100,000 protected requests per month, one token each, and a 10x scenario of 1,000,000 per month. Turnstile uses 3 widgets (staging, sandbox, production). Staging and sandbox traffic is not given, so it is shown as a sensitivity below. Prices were read from official pages on 2026-11-12 and should be rechecked before budgeting.</div>
+
+  <h3>What one request costs in each path</h3>
+  <table>
+    <thead><tr><th>Step</th><th>reCAPTCHA Enterprise</th><th>Turnstile (custom provider)</th></tr></thead>
+    <tbody>
+      <tr><td>Client attestation</td><td>Firebase exchange creates 1 reCAPTCHA assessment (billable above the free quota)</td><td>Widget run, free</td></tr>
+      <tr><td>Backend step</td><td>none</td><td>Siteverify call (free) and <code>createToken()</code> call to Firebase</td></tr>
+      <tr><td>Verification</td><td><code>verifyToken(consume)</code> call</td><td><code>verifyToken(consume)</code> call</td></tr>
+      <tr><td>Backend calls per request</td><td>1 Firebase call</td><td>3 outbound calls (about 300,000 per month, roughly 0.12 per second on average)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Cost at 100,000 and 1,000,000 production requests per month</h3>
+  <table>
+    <thead><tr><th>Item</th><th>reCAPTCHA Enterprise</th><th>Turnstile</th></tr></thead>
+    <tbody>
+      <tr><td><strong>100,000 per month</strong> (base)</td><td><strong>about $8 per month</strong> (about $96 per year): 100,000 assessments fall in the 10,001 to 100,000 band, a flat fee in Google's <a href="https://docs.cloud.google.com/recaptcha/docs/billing-information">billing documentation</a></td><td><strong>$0</strong>: Free plan, unlimited challenges, 3 of 20 widgets (<a href="https://developers.cloudflare.com/turnstile/plans">plans</a>)</td></tr>
+      <tr><td><strong>1,000,000 per month</strong> (10x)</td><td><strong>about $900 to $1,000 per month</strong> (about $11,000 to $12,000 per year). Google bills $1 per 1,000 assessments above 100,000. Reading that as $8 plus $1 per 1,000 on the extra 900,000 gives about $908. A third-party summary shows $900 at 1,000,000, and charging $1 per 1,000 on every assessment would give $1,000. The documentation does not settle which applies.</td><td><strong>$0</strong>: the Free plan states unlimited challenges, so volume does not change the license cost</td></tr>
+      <tr><td>Backend calls per month</td><td>100,000 at base, 1,000,000 at 10x (<code>verifyToken</code> only)</td><td>300,000 at base, 3,000,000 at 10x (Siteverify, <code>createToken</code>, <code>verifyToken</code>), about 1.2 per second on average at 10x</td></tr>
+      <tr><td>Firebase App Check</td><td colspan="2">No-cost, subject to quotas and limits that vary by provider (<a href="https://firebase.google.com/pricing">Firebase pricing</a>)</td></tr>
+    </tbody>
+  </table>
+  <p>At the base volume the license difference is about $8 per month, so cost alone should not decide between the two. At 10x it becomes material, roughly $900 to $1,000 per month in favor of Turnstile on license cost alone. The Turnstile path costs more in engineering and operations: Indodana runs the exchange endpoint and service account, and attestation was slower in this PoC (about 2 s versus about 0.6 s, low confidence, see the side by side table). At 10x those three Firebase and Cloudflare calls per request also make quota limits more likely to matter.</p>
+
+  <h3>Sensitivity: staging and sandbox traffic on reCAPTCHA</h3>
+  <p>Google's free allowance and bands are aggregated across the whole organization, all keys and projects. At the base volume, production alone is already at the top of the $8 band, so any extra assessments cross into the next band, billed at $1 per 1,000. The documentation does not say whether the $8 fee still applies in that band, so the base volume rows assume it does. At 10x production is already well inside the per-assessment band, so extra traffic simply adds $1 per 1,000.</p>
+  <table>
+    <thead><tr><th>Production per month</th><th>Non-production assessments per month</th><th>Estimated reCAPTCHA cost</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3">100,000</td><td>0</td><td>$8</td></tr>
+      <tr><td>10,000</td><td>about $18</td></tr>
+      <tr><td>50,000</td><td>about $58</td></tr>
+      <tr><td rowspan="3">1,000,000</td><td>0</td><td>about $900 to $1,000</td></tr>
+      <tr><td>10,000</td><td>add about $10</td></tr>
+      <tr><td>50,000</td><td>add about $50</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What could change the estimate</h3>
+  <ul>
+    <li><strong>Existing reCAPTCHA Enterprise usage in the organization</strong> shares the same free quota and bands, so a real bill depends on total usage, not only this feature. Not known here.</li>
+    <li><strong>Auto token refresh.</strong> Firebase documents that App Check creates an assessment each time a regular token refreshes (about twice an hour per active client at a 1 hour TTL). If the app also keeps a regular token alive besides limited-use tokens, assessments exceed one per request.</li>
+    <li><strong>Pricing sources disagree.</strong> Google's own billing page gives a flat $8 for the 10,001 to 100,000 band. A third-party page lists about $90 at 100,000 and says the free tier was cut on 2026-04-02, which does not match Google's page. This estimate follows the official page.</li>
+    <li><strong>Quotas at 10x.</strong> Firebase says App Check's default per-project quotas are not typically depleted, but the Turnstile path makes about 3,000,000 Firebase or Cloudflare calls per month at 10x. Check the quota page in the Cloud console and ask for an increase before launch if needed.</li>
+    <li><strong>Not priced:</strong> compute for the exchange and verification calls on Hermes, any proxy or egress cost, and App Check quota limits for token creation and consumption at 100,000 requests per month. Firebase says default quotas are not typically depleted, but the quota page in the Cloud console should be checked. Replay protection (<code>consume</code>) is also documented as beta.</li>
+  </ul>
+  <p class="muted">Sources: <a href="https://docs.cloud.google.com/recaptcha/docs/billing-information">Google reCAPTCHA billing</a>, <a href="https://firebase.google.com/docs/app-check">Firebase App Check overview</a>, <a href="https://firebase.google.com/docs/app-check/web/recaptcha-enterprise-provider">Firebase reCAPTCHA Enterprise provider</a>, <a href="https://firebase.google.com/pricing">Firebase pricing</a>, <a href="https://developers.cloudflare.com/turnstile/plans">Cloudflare Turnstile plans</a>, <a href="https://www.phpcaptcha.org/recaptcha-pricing">third-party reCAPTCHA pricing summary</a>.</p>
+<p class="muted">Reproduce: <code>bun dev</code>, then <code>bun scripts/simulate/run.ts</code> and <code>bun scripts/simulate/report.ts</code>. Output: <code>docs/results.html</code>.</p>
+</body></html>

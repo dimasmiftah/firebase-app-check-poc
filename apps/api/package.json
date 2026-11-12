@@ -1,0 +1,21 @@
+{
+  "name": "@poc/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "test": "bun --bun vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@poc/shared": "workspace:*",
+    "firebase-admin": "^14.5.0",
+    "hono": "^4.13.17"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.9.0",
+    "vitest": "^5.1.0"
+  }
+}

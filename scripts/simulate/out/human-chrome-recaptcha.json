@@ -1,0 +1,22 @@
+{
+  "kind": "browser",
+  "profile": "human-chrome",
+  "description": "Normal Chrome, real user, cleared site data (manual run)",
+  "provider": "recaptcha",
+  "run": 1,
+  "result": {
+    "provider": "recaptcha",
+    "startedAt": "2026-11-12T08:39:54.919Z",
+    "signals": {
+      "webdriver": false,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+      "plugins": 5,
+      "languages": ["en-US", "en"]
+    },
+    "score": { "ok": true, "score": 0.9, "reasons": [], "valid": true, "invalidReason": "INVALID_REASON_UNSPECIFIED", "error": null },
+    "attestation": { "ok": true, "durationMs": 785.7000000029802, "error": null },
+    "regular": { "status": 200, "detail": "Valid reusable token" },
+    "sensitive": { "status": 200, "detail": "Token consumed, replay protected" },
+    "replay": { "status": 409, "detail": "token_already_consumed" }
+  }
+}

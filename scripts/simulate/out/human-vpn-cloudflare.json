@@ -1,0 +1,33 @@
+{
+  "kind": "browser",
+  "profile": "human-vpn",
+  "description": "Normal Chrome with VPN on (manual run)",
+  "provider": "cloudflare",
+  "run": 1,
+  "note": "Regular call used a token cached from the earlier non-VPN session. The fresh limited-use exchange reached the API with a Turnstile token (so the widget did issue one with the VPN on) but the API timed out calling Cloudflare Siteverify. This is most likely the API host's network while the VPN was on, not a Turnstile decision about the human; that is an inference.",
+  "result": {
+    "provider": "cloudflare",
+    "signals": {
+      "webdriver": false,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+      "plugins": 5,
+      "languages": [
+        "en-US",
+        "en"
+      ]
+    },
+    "startedAt": "2026-11-12T08:56:09.159Z",
+    "score": null,
+    "attestation": {
+      "ok": false,
+      "durationMs": 0,
+      "error": "siteverify_unavailable: The operation timed out."
+    },
+    "regular": {
+      "status": 200,
+      "detail": "Valid reusable token"
+    },
+    "sensitive": null,
+    "replay": null
+  }
+}

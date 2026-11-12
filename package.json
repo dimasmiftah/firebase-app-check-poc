@@ -1,0 +1,14 @@
+{
+  "name": "firebase-app-check-poc",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "test": "bun run --filter '*' test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "lint": "bun run --filter '*' lint"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}
